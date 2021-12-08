@@ -1,0 +1,11 @@
+from prvocisla import *
+print(prvocisla)
+for i in range(1000):
+    a = 0
+    for g in prvocisla:
+        for f in prvocisla:
+            if i == int(g) + int(f):
+                a += 1
+    if a == 0 and i % 2 == 0 and i > 2 :
+        print(i)
+print('0')
