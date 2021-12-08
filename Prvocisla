@@ -1,0 +1,27 @@
+
+prvocisla = []
+for i in range(2000):
+    kok = []
+    for p in range(2000):
+        if i % (p+1) == 0:
+            kok.append('1')
+    if len(kok) == 2:
+        prvocisla.append(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
