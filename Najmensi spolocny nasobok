@@ -1,0 +1,44 @@
+prvocisla = []
+for i in range(1000):
+    pole = []
+    for p in range(1000):
+        if i % (p+1) == 0:
+            pole.append('1')
+    if len(pole) == 2:
+        prvocisla.append(i)
+cislo1 = []
+exponent1 = []
+cislo2 = []
+exponent2 = []
+polia = [cislo1, cislo2]
+
+
+a =  input('Zadaj číslo')
+a = int(a)
+b = int(input('Zadaj cislo'))
+k = 0
+f = 0
+for i in prvocisla:
+    for g in range(50):
+        if a % i == 0:
+            k += 1
+            a = a/i
+    for s in range(50):
+        if b % i == 0:
+            f += 1
+            b = b/i
+    if k > f or k == f:
+        if k > 0:
+            print( i, 'na', k)
+            k = 0
+            f = 0
+    else:
+        if f > 0:
+            print(i, 'na', f)
+            k = 0
+            f = 0
+        
+        
+
+    
+            
